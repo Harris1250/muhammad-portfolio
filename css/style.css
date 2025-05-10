@@ -9139,7 +9139,8 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  background: #000000;
+  background: linear-gradient(135deg, #1c1c1c, #3d2c2e);
+  color: #ffffff;
   padding: 7em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
@@ -9940,6 +9941,18 @@ textarea.form-control {
     width: 100%;
 }
 .unified-bg {
-  background: #0d1117; /* or any color you like */
-  color: #f1f1f1;
+  background: linear-gradient(135deg, #1c1c1c, #3d2c2e);
+  color: #ffffff;
+}
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 12px 24px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(255, 193, 7, 1), 0 20px 40px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.contact-info .box:hover .icon {
+  animation: glowPulse 2s infinite alternate;
 }
