@@ -10021,3 +10021,25 @@ body {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -60px;                       /* ✅ Pulls it UP from the footer */
+  margin: 0 auto;
+  width: 80px;                      /* ✅ Big clickable zone */
+  height: 80px;
+  font-size: 32px;                  /* ✅ Bigger icon */
+  border-radius: 50%;
+  color: #ffbd39;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.back-to-top:hover {
+  transform: scale(1.25);           /* ✅ Slight pop effect */
+  background-color: rgba(255, 189, 57, 0.15);  /* ✅ Keeps the yellow vibe */
+  cursor: pointer;
+}
