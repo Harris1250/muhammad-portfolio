@@ -25,7 +25,22 @@ This website is a clean, responsive, and professional portfolio highlighting:
 
 ## 🖼️ Screenshots
 
-![Homepage Screenshot](screenshots/homepage-screenshot.png)
+## 📸 Screenshots
+
+### 🔹 Homepage  
+![Homepage](screenshots/homepage-screenshot.png)
+
+### 🔹 Projects Section  
+![Projects](screenshots/projects-section.png)
+
+### 🔹 Work Experience  
+![Work Experience](screenshots/work-experience.png)
+
+### 🔹 Skills Section  
+![Skills](screenshots/skills-section.png)
+
+### 🔹 Mobile View *(Optional)*  
+![Mobile](screenshots/mobile-view.png)
 
 ## ⚙️ How to Run This Project
 
