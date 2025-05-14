@@ -23,7 +23,6 @@ This website is a clean, responsive, and professional portfolio highlighting:
 | Frontend       | HTML, CSS, JavaScript       |
 | Hosting        | GitHub Pages                |
 
-## 🖼️ Screenshots
 
 ## 📸 Screenshots
 
