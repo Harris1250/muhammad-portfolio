@@ -14,7 +14,6 @@ This is my personal portfolio site, designed to highlight my work, mindset, and 
 - [Screenshots](#-screenshots)
 - [How to Run This Project](#️-how-to-run-this-project)
 - [Contact](#-contact)
-- [License](#-license)
 
 ---
 
@@ -60,7 +59,7 @@ This website is a clean, responsive, and professional portfolio highlighting:
 
 No build tools or server setup required — just open the HTML locally.
 
-git clone https://github.com/Harris1250/muhammad-portfolio.git
+1. git clone https://github.com/Harris1250/muhammad-portfolio.git
 cd muhammad-portfolio
 
 
