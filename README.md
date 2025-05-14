@@ -39,9 +39,6 @@ This website is a clean, responsive, and professional portfolio highlighting:
 ### 🔹 Skills Section  
 ![Skills](screenshots/skills-section.png)
 
-### 🔹 Mobile View *(Optional)*  
-![Mobile](screenshots/mobile-view.png)
-
 ## ⚙️ How to Run This Project
 
 No build tools or server setup required — just open the HTML.
