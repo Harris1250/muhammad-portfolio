@@ -1,11 +1,7 @@
-AOS.init({
-  duration: 800,
-  easing: 'slide',
-  disable: function () {
-    return window.innerWidth < 768; // disables AOS on mobile
-  },
-  once: true
-});
+ AOS.init({
+ 	duration: 800,
+ 	easing: 'slide'
+ });
 
 (function($) {
 
