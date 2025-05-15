@@ -642,11 +642,6 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
   </div>  
     </section>
 
-	<section id="test-scroll" style="height: 100vh; background: #111; color: white; display: flex; align-items: center; justify-content: center;">
-  <h1 style="font-size: 32px;">If you can read this, scrolling worked.</h1>
-</section>
-
-
 <footer class="ftco-footer ftco-section">
   <div class="container">
     <div class="row mb-5">
@@ -760,6 +755,23 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+  // Save last scroll position
+  let lastScroll = 0;
+
+  // Watch if scroll position resets to top automatically
+  setInterval(() => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll === 0 && lastScroll > 100) {
+      // We're at top again, but didn't scroll up... force-scroll back down
+      window.scrollTo({ top: lastScroll, behavior: 'auto' });
+    } else {
+      lastScroll = currentScroll;
+    }
+  }, 250);
+</script>
 
   <!-- Progress Bar Script -->
   <script>
