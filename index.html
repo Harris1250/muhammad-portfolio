@@ -700,16 +700,15 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
   </div>
 </footer>
 
-  <!-- loader 
+  <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
     <svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
     </svg>
   </div>
-  -->
 
-  <!-- 🛠️ Hide Loader on Page Load 
+  <!-- 🛠️ Hide Loader on Page Load -->
   <script>
     window.addEventListener("load", function () {
       var loader = document.getElementById("ftco-loader");
@@ -719,7 +718,6 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
       }
     });
   </script>
-  -->
 
   <!-- ✅ Smooth Anchor Scroll -->
   <script>
@@ -755,29 +753,6 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-  // Save last scroll position
-  let lastScroll = 0;
-
-  // Watch if scroll position resets to top automatically
-  setInterval(() => {
-    const currentScroll = window.scrollY;
-
-    if (currentScroll === 0 && lastScroll > 100) {
-      // We're at top again, but didn't scroll up... force-scroll back down
-      window.scrollTo({ top: lastScroll, behavior: 'auto' });
-    } else {
-      lastScroll = currentScroll;
-    }
-  }, 250);
-</script>
-<section id="ghostbuster-section" style="height: 100vh; background: #111; color: white; display: flex; align-items: center; justify-content: center;">
-  <h1 style="font-size: 32px;">🚨 This is the new section, not the cached one</h1>
-</section>
-
-
-<!-- Trigger rebuild -->
 
   <!-- Progress Bar Script -->
   <script>
