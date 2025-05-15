@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
   <head>
     <title>Muhammad Nadeem</title>
     <meta charset="utf-8">
 <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+   
+   <style>
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+</style>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -27,9 +36,7 @@
 	<a id="top"></a>
 	<!-- Scroll Progress Bar -->
 <div id="progressbar"></div>
-<div id="scrollPath"></div>
-
-	  
+<div id="scrollPath"></div>	  
 	  
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target fixed-top" id="ftco-navbar">
 	    <div class="container">
@@ -709,6 +716,27 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
 <a href="javascript:void(0)" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">
   <span class="icon-arrow-up"></span>
 </a>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      const target = document.querySelector(href);
+
+      if (target) {
+        e.preventDefault();
+        const offset = 80; // adjust for navbar height
+        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
   
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -719,9 +747,9 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
+  <!--<script src="js/aos.js"></script> -->
   <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
+  <!--<script src="js/scrollax.min.js"></script> -->
   <script src="js/main.js"></script>
 
 <!-- Progress Bar Script -->
