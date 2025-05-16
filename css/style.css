@@ -10320,3 +10320,81 @@ html {
   transform: scale(1.04);
   cursor: pointer;
   }
+
+  #testimonials-section {
+    position: relative;
+  }
+
+.heading-overlay {
+  font-size: 56px;
+  white-space: nowrap;
+  opacity: 2; /* ⬆️ Increased from 0.12 to make it visible */
+  color: #e0e0e0; /* ⬅️ Soft light gray instead of default */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  z-index: 0;
+  filter: blur(0.7px); /* ⬅️ subtle blur for modern layered effect */
+}
+
+  .heading-main {
+    font-size: 32px;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+  }
+
+  .testimonial-card {
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(255, 193, 7, 0.25);
+    text-align: center;
+    min-height: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    animation: pulseGlow 3.2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 12px rgba(255, 193, 7, 0.25);
+    }
+    50% {
+      box-shadow: 0 0 26px 8px rgba(255, 193, 7, 0.5);
+    }
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+
+  .source {
+    color: #ffc107;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .affiliation {
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+
+  @media (max-width: 768px) {
+    .heading-overlay {
+      font-size: 40px;
+    }
+
+    .heading-main {
+      font-size: 26px;
+    }
+  }
