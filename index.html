@@ -667,102 +667,6 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
   </div>
 </section>
 
-<!-- 🔥 Custom Styles -->
-<style>
-  .glow-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .glow-group {
-    position: relative;
-    width: 100%;
-  }
-
-  .glow-group input,
-  .glow-group textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #333;
-    color: #fff;
-    padding: 14px 6px;
-    font-size: 18px;
-    width: 100%;
-    outline: none;
-    z-index: 1;
-    position: relative;
-    transition: background 0.3s, color 0.3s;
-  }
-
-  .glow-group input:focus,
-  .glow-group textarea:focus {
-    background: #fff;
-    color: #111;
-  }
-
-  .glow-group label {
-    position: absolute;
-    left: 6px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #777;
-    pointer-events: none;
-    transition: 0.25s ease;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-  }
-
-  .glow-group input:focus + label,
-  .glow-group input:not(:placeholder-shown) + label,
-  .glow-group textarea:focus + label,
-  .glow-group textarea:not(:placeholder-shown) + label {
-    top: -12px;
-    font-size: 13px;
-    color: #facc15;
-  }
-
-  .glow-group textarea {
-    resize: none;
-  }
-
-  .underline {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background: #facc15;
-    transition: all 0.3s ease;
-    z-index: 0;
-  }
-
-  .glow-group input:focus ~ .underline,
-  .glow-group textarea:focus ~ .underline {
-    width: 100%;
-  }
-
-  .send-btn {
-    background: #facc15;
-    color: #000;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 14px 44px;
-    border: none;
-    border-radius: 8px;
-    letter-spacing: 1px;
-    box-shadow: 0 8px 24px rgba(250, 204, 21, 0.4);
-    transition: all 0.3s ease;
-  }
-
-  .send-btn:hover {
-    background: #ffe44d;
-    transform: scale(1.04);
-    cursor: pointer;
-  }
-</style>
-
 <footer class="ftco-footer ftco-section">
   <div class="container">
     <div class="row mb-5">
@@ -886,6 +790,34 @@ TOOLS USED IN PROJECTS SECTION (4 projects, 4 bullets each)
       document.getElementById('progressbar').style.width = progress + "%";
     });
   </script>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset(); // Clears the form inputs
+          window.location.href = 'https://formspree.io/thanks?language=en';
+        } else {
+          alert("Oops! Something went wrong.");
+        }
+      }).catch(error => {
+        alert("Oops! Something went wrong.");
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
