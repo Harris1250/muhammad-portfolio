@@ -28,8 +28,6 @@ This website is a clean, responsive, and professional portfolio highlighting:
 
 ---
 
----
-
 ## 🚀 Key Features
 
 - Responsive, mobile-first layout
