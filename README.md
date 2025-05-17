@@ -28,6 +28,17 @@ This website is a clean, responsive, and professional portfolio highlighting:
 
 ---
 
+---
+
+## 🚀 Key Features
+
+- Responsive, mobile-first layout
+- Animated project cards with hover effects
+- Custom testimonial and work experience sections
+- Clear, dark-themed design for focus and clarity
+
+---
+
 ## 🧠 Tools & Tech Stack
 
 | Category       | Tools/Technologies         |
