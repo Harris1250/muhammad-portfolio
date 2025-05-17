@@ -8863,14 +8863,28 @@ h1, h2, h3, h4, h5,
     font-size: 12px;
     margin-bottom: 10px;
     color: #ffbd39; }
-  .services-1:hover {
-    background: #ffbd39; }
-    .services-1:hover .icon i {
-      color: #fff; }
-    .services-1:hover h3 {
-      color: #000000; }
-      .services-1:hover h3:after {
-        background: #000000; }
+.services-1:hover {
+  background: rgba(255, 255, 255, 0.1); /* ⬅️ keep the original background */
+  transform: scale(1.02);
+  animation: glowPulse 1.6s ease-in-out infinite alternate;
+  box-shadow:
+    0 0 8px 2px rgba(255, 193, 7, 0.7),
+    0 0 16px 4px rgba(255, 193, 7, 0.5),
+    0 0 24px 6px rgba(255, 193, 7, 0.3);
+  z-index: 2;
+}
+
+.services-1:hover .icon i {
+  color: #ffbd39;
+}
+
+.services-1:hover h3 {
+  color: #fff;
+}
+
+.services-1:hover h3:after {
+  background: #ffbd39;
+}
 
 .progress-wrap {
   width: 100%;
@@ -10398,3 +10412,32 @@ html {
       font-size: 26px;
     }
   }
+
+.project-card {
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 8px 2px rgba(255, 193, 7, 0.7),
+    0 0 16px 4px rgba(255, 193, 7, 0.5),
+    0 0 24px 6px rgba(255, 193, 7, 0.3);
+  z-index: 10;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow:
+      0 0 6px 1px rgba(255, 193, 7, 0.5),
+      0 0 12px 2px rgba(255, 193, 7, 0.3),
+      0 0 18px 3px rgba(255, 193, 7, 0.2);
+  }
+  100% {
+    box-shadow:
+      0 0 10px 3px rgba(255, 193, 7, 0.9),
+      0 0 20px 6px rgba(255, 193, 7, 0.6),
+      0 0 30px 9px rgba(255, 193, 7, 0.4);
+  }
+}
