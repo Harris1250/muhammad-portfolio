@@ -1,0 +1,10 @@
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.py linguist-detectable=true
+
+# Optional: Ignore SCSS or other extra styles
+*.scss linguist-detectable=false
+
+*.config linguist-detectable=false
+*.ico linguist-detectable=false
+*.zip linguist-detectable=false
