@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: #1a1a1a;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 30px;
+    }
+    .thanks-container {
+      background: #111;
+      padding: 60px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(255, 189, 57, 0.6);
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ffbd39;
+    }
+    p {
+      font-size: 18px;
+      color: #ccc;
+    }
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: #ffbd39;
+      color: #111;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(255, 189, 57, 0.6);
+    }
+    a:hover {
+      box-shadow: 0 0 25px rgba(255, 189, 57, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="thanks-container">
+    <h1>Appreciate It 🙏</h1>
+    <p>Message received. I’ll get back to you as soon as I can.<br>Feel free to explore more or connect on LinkedIn.</p>
+    <a href="index.html">Back to Portfolio</a>
+  </div>
+
+  <script>
+  setTimeout(function() {
+    window.location.href = "index.html";
+  }, 5000); // 5000ms = 5 seconds
+</script>
+
+<script>
+  confetti({
+    particleCount: 80,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+</script>
+
+</body>
+</html>

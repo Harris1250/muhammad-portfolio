@@ -10464,3 +10464,38 @@ html {
   font-weight: 600;
   color: #fff;
 }
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 189, 57, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 189, 57, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 189, 57, 0.4);
+  }
+}
+.pulse-card {
+  animation: pulse-glow 4s infinite ease-in-out;
+  border-radius: 12px;
+}
+.pulse-card:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s ease;
+}
+
+.actively-highlight {
+  color: #ffbd39;
+  font-weight: 800;
+  animation: pulse-active 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-active {
+  0%, 100% {
+    text-shadow: 0 0 5px #ffbd39, 0 0 10px #ffbd39;
+  }
+  50% {
+    text-shadow: 0 0 15px #ffbd39, 0 0 30px #ffbd39;
+  }
+}
