@@ -10441,3 +10441,26 @@ html {
       0 0 30px 9px rgba(255, 193, 7, 0.4);
   }
 }
+
+.btn {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.7); /* crisp yellow glow */
+  filter: brightness(1.15); /* adds slight glow without making it cheesy */
+}
+
+.contact-grid p {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.contact-grid strong {
+  font-weight: 600;
+  color: #fff;
+}
